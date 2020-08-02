@@ -1,0 +1,16 @@
+digraph G {
+  # dot diag.dot -Tpng -o/tmp/test.png -Kfdp -Nfontname="Open Sans" -Nfontsize=16 -Efontname="Open Sans" -Efontsize=16"
+
+  e_paper [shape=box, width = 2, height = 1,pos="3,.5!", label="e-paper display"];
+  brain [shape=box, width=2, height=1.5,pos="0,0!", label="esp32\ncentral brain"];
+  esp32_motor [shape=box, width=2, height=1, pos="3,-.5!",label="esp32\nmotor driver"];
+  bldc_motors [shape=box, width=2, height=1, pos="6,-.5!",label="BLDC motors\n & high-current driver ICs"];
+  wifi [shape=box, width=.1, height=.1, pos="-3,0!", label="User (via computer/\nmobile phone)", color="#cccccc", fontcolor="#999999"];
+  # shape=plaintext to hide frame
+
+  brain -> e_paper [label = "SPI"];
+  brain -> esp32_motor [label = "SPI"];
+  esp32_motor -> bldc_motors [label = "PWM"];
+  bldc_motors -> esp32_motor [label = "pos"];
+  wifi -> brain [label = "Wifi", dir="both"];
+}
