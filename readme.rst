@@ -31,7 +31,7 @@ Setting up the wifi network and host to ping is done by connecting to the ping c
    :align: center
 
    +---------------+---------------+
-   | |screenshot1| | |screenshot2| |
+   | |screenshot2| | |screenshot1| |
    +---------------+---------------+
 
 
@@ -69,10 +69,10 @@ Hubs
 
 The hubs can be 3D printed using the stereolithographic (resin/UV) method. The outer hub is shown first and contains an outer M5 thread to facilitate mounting the corresponding hand. It has a hollow core, which allows the threaded rod of the inner hand assembly to pass through.
 
-The inner hub provides an inner M3 thread, that seats a short section of threaded rod, which sticks through the other hub and to the front of the clock faceplate.
-
 .. image:: fig/hub_outer.png
    :alt: 3D view of the outer hub in OpenSCAD
+
+The inner hub provides an inner M3 thread, that seats a short section of threaded rod, which sticks through the other hub and to the front of the clock faceplate.
 
 .. image:: fig/hub_inner.png
    :alt: 3D view of the inner hub in OpenSCAD
