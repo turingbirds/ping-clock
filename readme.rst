@@ -3,7 +3,7 @@ The Ping Clock
 
 Are you ever in a video call, when the other party suddenly freezes mid-sentence, leaving you wondering after a few seconds of silence: is it my connection that's having issues, or theirs? In such situations, one glance at the ping clock dial provides an immediate overview of your internet connection status and health, measured in terms of ping time.
 
-Ping time is the time it takes for a network packet to reach a certain destination host and come back again. Lower is better; for video calls, anything below a few tenths of a second is typically fine. The host can be chosen as a public server with high reliability (for example, google.com or 80.80.80.80), or as something with a special significance (like the hostname of your cloud instance).
+Ping time is the time it takes for a network packet to reach a certain destination host and come back again. Lower is better; for video calls, anything below a few tenths of a second is typically fine. The host can be chosen as a public server with high reliability (for example, google.com or 8.8.8.8), or as something with a special significance (like the hostname of your cloud instance).
 
 If your video call freezes, but the ping clock continues to indicate low ping, there is no need to reset your router; just wait for the other side to come back.
 
